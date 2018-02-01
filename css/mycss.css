@@ -1,0 +1,37 @@
+kbd{
+	background-color: red;
+}
+.box{
+	width:80%;
+	margin: auto;
+	border: 1px solid black;
+}
+.nav-pills
+{
+	background-color: black;
+	margin: auto;
+}
+.nav-pills li a{
+	color: white;
+}
+.nav-pills a:hover{
+	background-color: #e3e3e3;
+}
+
+.nav-pills .nav-link.active{
+    background-color: red;
+}
+
+.btn-primary{
+	background-color: grey;
+	border-color: black;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: black;
+    border-color: black;
+}
+#pick-up{
+	width:60%;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Bootstrap demo</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/mycss.css">
+</head>
+<body>
+	
+<div class="container">
+	<div class="jumbotron pb-0">
+		<h1>Let's Travel</h1>
+			<p>To find yourself you must get lost first.</p>
+			<nav class="navbar navbar-expand-sm bg-light pr-0 pl-0">
+  			<ul class="navbar-nav mr-0">
+	    		<li class="nav-item ">
+	      		<a class="nav-link" href="#">Home</a>
+	    		</li>
+	    		<li class="nav-item">
+	      		<a class="nav-link" href="#">Places</a>
+	    		</li>
+	   		 	<li class="nav-item">
+	      		<a class="nav-link" href="#">About Us</a>
+	    		</li>
+	  		</ul>
+		</nav>
+	</div>
+		<div class="box">
+			<ul class="nav nav-pills red">
+				<li class="nav-item">
+					<a class="nav-link active" data-toggle="pill" href="#home">
+						Flight
+					</a>
+				</li>
+				<li>
+					<a class="nav-link" data-toggle="pill" href="#menu1">
+						Hotel
+					</a>
+				</li>
+				<li>
+					<a class="nav-link" data-toggle="pill" href="#menu2">
+						Cab
+					</a>
+				</li>
+			</ul>
+			<div class="tab-content">
+		    <div id="home" class="container tab-pane active"><br>
+		      <h3 class="mb-3">Travel all around the world with us at cheapest air fare!</h3>
+		      <form class="form-inline" action="#">
+	  				<label for="from" class="ml-3">From: </label>
+	  				<input type="text" class="form-control" placeholder="Departing From" name="from">
+	  				<label for="to" class="ml-3">To: </label>
+	  				<input type="text" class="form-control" id="to" placeholder="Arriving at" name="to">			
+	  		</form>
+	  		<button type="submit" class="btn btn-primary ml-3 mt-3 mb-3">Search and Find Dates</button>
+		    </div>
+		    <div id="menu1" class="container tab-pane fade"><br>
+		      <h3 class="mb-3">Find best hotels with us</h3>
+		      <p class="ml-3">Book hotels with us at best fares</p>
+		      <p class="ml-3">We know hotels- We know comfort</p>
+		      <button type="submit" class="btn btn-primary mb-3 ml-3">Search Hotels</button>
+		    </div>
+		    <div id="menu2" class="container tab-pane fade"><br>
+		      <h3 class="mb-3">Best service and cars in the Cab world</h3>
+		      <p class="ml-3"><kbd>DISCOUNT!</kbd> Book now and get 50% off.</p>
+		      <p class="ml-3">We know luxary- We know roads</p>
+		      <form class="from-inline">
+		      	<input type="text" class="form-control ml-3" id="pick-up" placeholder="Enter Pick-up Point" name="to">
+		      </form>
+		      <button type="submit" class="btn btn-primary ml-3 mt-3 mb-3">Search Availability</button>
+		    </div>
+	  	</div>
+		</div>
+	</div>
+</body>
+</html>
