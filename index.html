@@ -5,32 +5,45 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
   <link rel="stylesheet" type="text/css" href="css/mycss.css">
 </head>
 <body>
-	
-<div class="container">
-	<div class="jumbotron pb-0">
+	<div class="jumbotron col-sm">
 		<h1>Let's Travel</h1>
-			<p>To find yourself you must get lost first.</p>
-			<nav class="navbar navbar-expand-sm bg-light pr-0 pl-0">
-  			<ul class="navbar-nav mr-0">
-	    		<li class="nav-item ">
-	      		<a class="nav-link" href="#">Home</a>
-	    		</li>
-	    		<li class="nav-item">
-	      		<a class="nav-link" href="#">Places</a>
-	    		</li>
-	   		 	<li class="nav-item">
-	      		<a class="nav-link" href="#">About Us</a>
-	    		</li>
-	  		</ul>
-		</nav>
+		<blockquote class="mb-0">To find yourself you must get lost first.</blockquote>
 	</div>
-		<div class="box">
+	<nav class="col-sm navbar navbar-expand-lg navbar-light bg-dark sticky-top">
+  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    		<span class="navbar-toggler-icon"></span>
+  	</button>
+
+  	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+	    	<ul class="navbar-nav mr-auto">
+	      	<li class="nav-item navbg">
+	        	<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+		      </li>
+		      <li class="nav-item navbg">
+		        <a class="nav-link" href="#places">Places</a>
+		      </li>
+		      <li class="nav-item navbg">
+		        <a class="nav-link" href="#">About Us</a>
+		      </li>
+		      <li class="nav-item navbg">
+		        <a class="nav-link" href="#">Contact Us</a>
+		      </li>
+		    </ul>
+		    <form class="form-inline my-2 my-lg-0">
+		      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+		      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+		    </form>
+	 	</div>
+	</nav>
+<div class="col-sm bgimg">
+	<div class="col-sm addpadding">
+	<div class="box">
 			<ul class="nav nav-pills red">
 				<li class="nav-item">
 					<a class="nav-link active" data-toggle="pill" href="#home">
@@ -51,6 +64,7 @@
 			<div class="tab-content">
 		    <div id="home" class="container tab-pane active"><br>
 		      <h3 class="mb-3">Travel all around the world with us at cheapest air fare!</h3>
+		      <p class="ml-3">We provide </p>
 		      <form class="form-inline" action="#">
 	  				<label for="from" class="ml-3">From: </label>
 	  				<input type="text" class="form-control" placeholder="Departing From" name="from">
@@ -75,7 +89,85 @@
 		      <button type="submit" class="btn btn-primary ml-3 mt-3 mb-3">Search Availability</button>
 		    </div>
 	  	</div>
+	</div>
+	</div>
+</div>
+
+
+
+<div>		
+	<a name="places"></a>
+	<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  	<ol class="carousel-indicators">
+	    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+	    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+	    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  	</ol>
+  	<div class="carousel-inner" role="listbox">
+        <div class="carousel-item active">
+
+          <img class="d-block img-fluid mx-auto" src="images/tajmahal.jpg" alt="Agra" style="width: 100%" >
+          <div class="carousel-caption">
+            <h3><a href="https://en.wikipedia.org/wiki/Agra"><mark class="mark">Agra</a></mark></h3>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block img-fluid mx-auto" src="images/shimla.jpg" alt="Shimla" style="width: 100%">
+          <div class="carousel-caption">
+            <h3><a href="https://en.wikipedia.org/wiki/Shimla"><mark class="mark">Shimla</mark></a></h3>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block img-fluid mx-auto" src="images/nainital.jpg" alt="Nainital" style="width: 100%">
+          <div class="carousel-caption">
+            <h3><a href="https://en.wikipedia.org/wiki/Nainital"><mark class="mark">Nainital</mark></a></h3>
+          </div>
+        </div>
+  	</div>
+
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+<div class="row bgimg">
+	<div class="col-sm-4">
+		<div class="card" style="width: 18rem;">
+		  <img class="card-img-top" src="images/vatsal.jpg" alt="Card image cap">
+		  <div class="card-body">
+		    <h5 class="card-title">Card title</h5>
+		    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+		    <a href="#" class="btn btn-primary">Go somewhere</a>
+		  </div>
 		</div>
 	</div>
+	<div class="col-sm-4">
+		<div class="card" style="width: 18rem;">
+		  <img class="card-img-top" src="images/vatsal.jpg" alt="Card image cap">
+		  <div class="card-body">
+		    <h5 class="card-title">Card title</h5>
+		    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+		    <a href="#" class="btn btn-primary">Go somewhere</a>
+		  </div>
+		</div>
+	</div>
+	<div class="col-sm-4">
+		<div class="card" style="width: 18rem;">
+		  <img class="card-img-top" src="images/vatsal.jpg" alt="Card image cap">
+		  <div class="card-body">
+		    <h5 class="card-title">Card title</h5>
+		    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+		    <a href="#" class="btn btn-primary">Go somewhere</a>
+		  </div>
+		</div>
+	</div>
+	
+</div>
+</div>
 </body>
 </html>

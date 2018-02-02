@@ -1,11 +1,54 @@
+
+html {
+  font-size: 14px;
+}
+
+@include media-breakpoint-up(sm) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  html {
+    font-size: 20px;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  html {
+    font-size: 28px;
+  }
+}
 kbd{
 	background-color: red;
 }
+.bgimg{
+	background-image: url("../images/london2.jpg");
+	height: auto;
+	min-height: 700px;
+	max-width: 100%;
+	margin: 0;
+}
 .box{
+	height: auto;
+	margin-top: 50px;
+	background-color: white;
 	width:80%;
 	margin: auto;
 	border: 1px solid black;
+	/*margin-bottom: 50px;*/
 }
+.jumbotron{
+	margin-bottom: 0px;
+	padding-top: 20px;
+	padding-bottom: 30px;
+	padding-right: 0px;
+	padding-left: 0;
+	background-color: black;
+	color:white;
+}
+
 .nav-pills
 {
 	background-color: black;
@@ -34,4 +77,72 @@ kbd{
 }
 #pick-up{
 	width:60%;
+}
+.img-fluid{
+	max-width: 80%;
+	max-height: 600px;
+	height: auto;
+	margin: auto;
+}
+.carousel-caption a{
+	text-decoration: underline;
+	color: blue;
+}
+.mark, mark{
+	color:black;
+	background-color: #e3e3e3;
+}
+.mark:hover{
+	background-color: powderblue;
+}
+/*.container-fluid{
+	padding-right: 0;
+	padding-left: 0;
+}
+.card{
+	margin-right: 2%;
+	margin-left: 5%;
+}*/
+/*.container{
+	padding: 0;
+	margin:0;
+	margin-right: 0;
+}
+*/
+.navbar-light .navbar-nav .nav-link{
+	color:white;
+	font-size: 17px;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+	color:red;
+	border-bottom: 5px solid red;
+}
+.addpadding{
+	padding-top:10%;
+}
+.card{
+	margin: auto;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  outline: black;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  border: 1px solid black;
+  background-image: none;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 55px;
+  color: red;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color: red;
 }
