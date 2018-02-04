@@ -4,14 +4,17 @@
 	<title>Bootstrap demo</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
   <link rel="stylesheet" type="text/css" href="css/mycss.css">
 </head>
 <body>
 	<div class="jumbotron col-sm">
+		<img src="images/logo.png" style="height: 100px; width:120px; float: left;">
 		<h1>Let's Travel</h1>
 		<blockquote class="mb-0">To find yourself you must get lost first.</blockquote>
 	</div>
@@ -28,11 +31,86 @@
 		      <li class="nav-item navbg">
 		        <a class="nav-link" href="#places">Places</a>
 		      </li>
+		      <li class="nav-item">
+		       <!-- MOdal Starts -->
+		       	<button type="button" class="nav-link btn btn-primary bobdr" data-toggle="modal" data-target="#exampleModalLong">
+				  SignUp
+				</button>
+
+				<!-- Modal -->
+				<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+				  <div class="modal-dialog" role="document">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <h5 class="modal-title" id="exampleModalLongTitle">SignUp</h5>
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          <span aria-hidden="true">&times;</span>
+				        </button>
+				      </div>
+				      <div class="modal-body">
+				        <!-- Form -->
+				        	<form>
+							  <div class="form-row">
+							    <div class="form-group col-md-6">
+							      <label for="inputEmail4">Email</label>
+							      <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+							    </div>
+							    <div class="form-group col-md-6">
+							      <label for="inputPassword4">Password</label>
+							      <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+							    </div>
+							  </div>
+							  <div class="form-group">
+							    <label for="inputAddress">Address</label>
+							    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+							  </div>
+							  <div class="form-group">
+							    <label for="inputAddress2">Address 2</label>
+							    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+							  </div>
+							  <div class="form-row">
+							    <div class="form-group col-md-6">
+							      <label for="inputCity">City</label>
+							      <input type="text" class="form-control" id="inputCity">
+							    </div>
+							    <div class="form-group col-md-4">
+							      <label for="inputState">State</label>
+							      <select id="inputState" class="form-control">
+							        <option selected>Choose...</option>
+							        <option>...</option>
+							      </select>
+							    </div>
+							    <div class="form-group col-md-2">
+							      <label for="inputZip">Zip</label>
+							      <input type="text" class="form-control" id="inputZip">
+							    </div>
+							  </div>
+							  <div class="form-group">
+							    <div class="form-check">
+							      <input class="form-check-input" type="checkbox" id="gridCheck">
+							      <label class="form-check-label" for="gridCheck">
+							        Remember me
+							      </label>
+							    </div>
+							  </div>
+							  <button type="submit" class="btn btn-primary">Sign in</button>
+							</form>
+				        <!-- Form -->
+				      </div>
+				      <div class="modal-footer">
+				        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+				        <button type="button" class="btn btn-primary">Save Changes</button>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+				<!-- Modal Ends -->
+				</li>
 		      <li class="nav-item navbg">
-		        <a class="nav-link" href="#">About Us</a>
+		        <a class="nav-link" href="#aboutuss">About Us</a>
 		      </li>
 		      <li class="nav-item navbg">
-		        <a class="nav-link" href="#">Contact Us</a>
+		        <a class="nav-link" href="#contactus">Contact Us</a>
 		      </li>
 		    </ul>
 		    <form class="form-inline my-2 my-lg-0">
@@ -135,39 +213,125 @@
   </a>
 </div>
 
+
+<a name="aboutuss"></a>
+
 <div class="row bgimg">
-	<div class="col-sm-4">
+	<h3  class="col-md-2" style="background-color: grey; height:10%;">About us</h3>
+	<div class="col-md-2">
 		<div class="card" style="width: 18rem;">
 		  <img class="card-img-top" src="images/vatsal.jpg" alt="Card image cap">
 		  <div class="card-body">
-		    <h5 class="card-title">Card title</h5>
-		    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+		    <h5 class="card-title">Vatsal Thakkar</h5>
+		    <p class="card-text">  ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
 		    <a href="#" class="btn btn-primary">Go somewhere</a>
 		  </div>
 		</div>
 	</div>
-	<div class="col-sm-4">
+	<div class="col-md-2">
 		<div class="card" style="width: 18rem;">
 		  <img class="card-img-top" src="images/vatsal.jpg" alt="Card image cap">
 		  <div class="card-body">
-		    <h5 class="card-title">Card title</h5>
-		    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+		    <h5 class="card-title">Vatsal Thakkar</h5>
+		    <p class="card-text">ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
 		    <a href="#" class="btn btn-primary">Go somewhere</a>
 		  </div>
 		</div>
 	</div>
-	<div class="col-sm-4">
+	<div class="col-md-2">
 		<div class="card" style="width: 18rem;">
 		  <img class="card-img-top" src="images/vatsal.jpg" alt="Card image cap">
 		  <div class="card-body">
-		    <h5 class="card-title">Card title</h5>
-		    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+		    <h5 class="card-title">Vatsal Thakkar</h5>
+		    <p class="card-text">ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
 		    <a href="#" class="btn btn-primary">Go somewhere</a>
 		  </div>
 		</div>
 	</div>
+	<div class="col-md-2">
+		<div class="card" style="width: 18rem;">
+		  <img class="card-img-top" src="images/vatsal.jpg" alt="Card image cap">
+		  <div class="card-body">
+		    <h5 class="card-title">Vatsal Thakkar</h5>
+		    <p class="card-text">ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+		    <a href="#" class="btn btn-primary">Go somewhere</a>
+		  </div>
+		</div>
+	</div>
+</div>
+</div>
+<!-- <div class="subscribe">
+	<div class="jumbotron col-sm">
+		<h1>Get the best offers first!</h1>
+		<blockquote class="mb-0">Subscribe to our news letter</blockquote>
+		 <div class="form-group">
+		    <label for="exampleInputEmail1">Email address</label>
+		    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email">
+		     <button type="submit" class="btn btn-primary"> Submit</button>
+		  </div>
+	</div>
+</div> -->
+
+	<div class="contact bgclr">
+		<div class="subscribe mt-5">
+			<div class="jumbotron col-sm">
+				<h1 style="margin-left: 15px" >Get the best offers first!</h1>
+				<p class="mb-0" style="margin-left: 15px; font-family: cursive;">Join to our news letter</p>
+				 <div class="form-group">
+				   	<input type="email" class="form-control mt-4 pl-0" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email">
+				     <button type="submit" class="btn btn-primary" style="margin-left: 0; margin-top: 20px;"> Submit</button>
+				  </div>
+			</div>
+		</div>
+		<a name="contactus"></a>
+		<!-- <div class="bgclr"> -->
+		<div class="myform" style="height: 500px;">
+			<form class="details">
+				<h3 style="margin-left: 15px; margin-bottom: 20px; margin-top: 20px;">Contact Us</h3>
+				<p>Lets book your next trip!</p>
+				<i class="fa fa-map-marker-alt" style="float: left; margin-top: 2px; margin-left: 15px; height: 15px; margin-right: 10px;">
+				</i>
+				<p>Gurgaon, Haryana</p>
+				<i class="fa fa-phone" style="float: left; margin-top: 2px; margin-left: 15px; height: 15px; margin-right: 10px;">
+				</i>
+				<p>Phone: +91-9922992299</p>
+				<i class="fa fa-envelope" style="float: left; margin-top: 2px; margin-left: 15px; height: 15px; margin-right: 10px;">
+				</i>
+				<p>Email: travel@travel.com</p>
+				<div class="form-group">
+				    <input type="text" class="form-control pl-0" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Name" style="margin-top: 30px;">
+			  	</div>
+				 <div class="form-group">
+				   <input type="email" class="form-control pl-0" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+				   <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+				</div>
+				<div class="form-group">
+				  <textarea class="form-control pl-0" id="exampleFormControlTextarea1" rows="4" placeholder="Comments"></textarea>
+				</div>
+				  
+			  <button type="submit" class="btn btn-primary"> Submit</button>
+		</form>
+		</div>
+	</div>
+	<!-- </div> -->
+
+<footer class="footer bg-dark">
+      <div class="container">
+        <span class="text-muted"><h5>Find Us On</h5>
+			<i class="fab fa-facebook-square fa-3x mr-2" ></i>
+			<i class="fab fa-instagram fa-3x mr-2"></i>
+			<i class="fab fa-snapchat-square fa-3x mr-2"></i>
+			<i class="fab fa-twitter-square fa-3x mr-2"></i>
+			<i class="fab fa-pinterest fa-3x mr-2"></i>
+			<i class="fab fa-linkedin fa-3x mr-2"></i>
+			<p>&copy All Rights Reserved 2018.</p>
+		</span>
+      </div>
+    </footer>
 	
-</div>
-</div>
 </body>
 </html>

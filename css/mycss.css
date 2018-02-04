@@ -23,10 +23,26 @@ html {
 kbd{
 	background-color: red;
 }
+
+body{
+	font-family-sans-serif:
+  /*// Safari for OS X and iOS (San Francisco)*/
+  -apple-system,
+ /* // Chrome < 56 for OS X (San Francisco)*/
+  BlinkMacSystemFont,
+  /*// Windows*/
+  "Segoe UI",
+ /* // Android*/
+  "Roboto",
+  /*// Basic web fallback*/
+  "Helvetica Neue", Arial, sans-serif,
+  /*// Emoji fonts*/
+  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+}
 .bgimg{
 	background-image: url("../images/london2.jpg");
 	height: auto;
-	min-height: 700px;
+	min-height: 600px;
 	max-width: 100%;
 	margin: 0;
 }
@@ -41,7 +57,7 @@ kbd{
 }
 .jumbotron{
 	margin-bottom: 0px;
-	padding-top: 20px;
+	padding-top: 0px;
 	padding-bottom: 30px;
 	padding-right: 0px;
 	padding-left: 0;
@@ -115,15 +131,17 @@ kbd{
 }
 .navbar-light .navbar-nav .nav-link:hover{
 	color:red;
-	border-bottom: 5px solid red;
 }
 .addpadding{
 	padding-top:10%;
 }
 .card{
+
 	margin: auto;
+	margin-top: 20%;
+	max-width: 100%;
 }
-.carousel-control-prev-icon,
+/*.carousel-control-prev-icon,
 .carousel-control-next-icon {
   height: 100px;
   width: 100px;
@@ -145,4 +163,124 @@ kbd{
   content: '<';
   font-size: 55px;
   color: red;
+}*/
+
+.carousel img{
+	height: auto;
+	max-width: 100%;
+}
+.contact form{
+	width: 70%;
+	margin:auto;
+	float: left;
+	background-color: #e3e3e3;
+}
+.contactus{
+
+}
+.modal-backdrop {
+  z-index: -1;
+}
+.modal-body{
+	background-color: #e3e3e2;
+}
+.modal-content{
+	margin-top: 20%;
+}
+.bg-dark{
+	background-color: #33383e!important;
+}
+.bobdr{
+	background-color: #33383e!important;
+	border: none;
+}
+.navbar-light .navbar-nav .nav-link:focus {
+  color:white;
+}
+.navbar-nav .btn-primary.focus,.navbar-nav .btn-primary:focus {
+    box-shadow: 0 0 0 0rem rgba(0,123,255,.5);
+}
+
+.navbar-nav .btn.focus, .navbar-nav .btn:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0rem rgba(0,123,255,.25);
+}
+.navbar-nav .btn-primary:not(:disabled):not(.disabled):active:focus{
+	    box-shadow: 0 0 0 0rem rgba(0,123,255,.5);
+}
+
+
+.contact .form-control{
+	padding-left: 20px;
+}
+.contact .form-group{
+	padding-left: 15px;
+}
+.contact .btn{
+	margin-left: 15px;
+}
+
+.contact form{
+	margin:auto;
+	width: 80%;
+	margin-left: 10%;
+}
+.contact.lable{
+	font-size: 17px;
+}
+.subscribe .btn{
+	background-color: #f44336;
+}
+.subscribe .jumbotron{
+	font-family: raleway;
+	width: 80%;
+	margin: auto;
+	background-color: grey;
+}
+.subscribe .jumbotron:hover{
+	background-color: black;
+}
+.subscribe .btn:hover{
+	background-color: grey;
+}
+.subscribe .p{
+	margin-left: 15px;
+}
+.details p{
+	margin-bottom: 5px;
+	margin-left: 15px;
+}
+.contact{
+	background-color: #e3e3e3;
+}
+.details{
+	background-color: #e3e3e3;
+}
+.bgclr{
+	background-color: #e3e3e3; 	
+}
+/*.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}*/
+.myform{
+	background-color: #e3e3e3;
+}
+
+.footer h5{
+	    font-family: cursive;
+}
+.footer{
+	width: 100%;
+	margin: auto;
+	text-align: center;
+}
+.footer p{
+	margin-bottom: 0;
+}
+body{
+	background-color: #e3e3e3;
 }
